@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout 2</title>
+</head>
+
+<style>
+    .parent{
+        /* height: 100vh; */
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    *{
+        margin: 0;
+        /* padding: 2px; */
+        gap: 15px;
+    }
+    .header{
+      height: 15vh;
+      background-color: skyblue;
+      /* margin: 2px; */
+      
+
+    }
+
+    .main{
+        height: 70vh;
+        display: flex;
+        /* margin: 2px; */
+    }
+
+    .left{
+    
+      width: 80%;
+      height: 100%;
+      /* margin: 2px; */
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .up{
+        
+        width: 100%;
+        height: 50%;
+        display: flex;
+
+    }
+    .smallbox{
+        height: 100%;
+        flex-grow: 1;
+        background-color:rgb(153, 135, 235);
+        
+
+    }
+
+    .down{
+        background-color: chartreuse;
+        width: 100%;
+        height: 50%;
+    }
+
+    .right{
+      background-color: burlywood;
+      width: 20%;
+      height: 100%;
+    }
+    .footer{
+        height: 15vh;
+        background-color: skyblue;
+        /* margin: 2px; */
+        
+
+    }
+</style>
+<body>
+    <div class="parent">
+        <div class="header"></div>
+        <div class="main">
+            <div class="left">
+                <div class="up">
+                    <div class="smallbox"></div>
+                    <div class="smallbox"></div>
+                    <div class="smallbox"></div>
+                </div>
+                <div class="down"></div>
+            </div>
+            <div class="right"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
