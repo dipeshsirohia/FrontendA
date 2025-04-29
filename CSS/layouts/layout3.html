@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout2</title>
+</head>
+<style>
+    *{
+        margin: 0;
+
+    }
+    .chatbox{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      height: 15vh;
+      background-color: rgba(0, 0, 0,0.7);
+      color: antiquewhite;
+    } 
+    .chatmessage{
+      flex: 1;
+      background-color: burlywood;
+      
+    }
+    .sendmessage{
+     height: 13vh;
+     /* background-color: blue; */
+     display: flex;
+     
+    }
+    .input{
+      flex: 1;
+    }
+    .button{
+      width: 10%;
+    }
+
+    .input input{
+     height: 90%;
+     width: 99%;
+     border: 2px double black;
+     background-color: aquamarine;
+    }
+    .button button{
+        height: 100%;
+        width: 100%;
+        border: 3px solid goldenrod;
+        background-color: lightgreen;
+    }
+
+    
+</style>
+<body>
+    <div class="chatbox">
+        <div class="header"> Chat Header</div>
+        <div class="chatmessage">Chat messages</div>
+        <div class="sendmessage">
+            <div class="input">
+                <input type="text" placeholder="write your message">
+            </div>
+            <div class="button">
+                <button>Send</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
