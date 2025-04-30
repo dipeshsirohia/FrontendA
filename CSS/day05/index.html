@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+</head>
+<style>
+    *{
+        margin:0;
+        box-sizing: border-box;
+    }
+
+    .parent{
+    height: 100vh;
+    background: linear-gradient(to right, rgb(117, 46, 46) ,rgb(186, 57, 57) , rgb(186, 104, 104));
+    display:flex;
+    justify-content: center; 
+    align-items: center; 
+    }
+
+    .net{
+        font-size: 100px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        /* border: 10px solid blanchedalmond; */
+        background: linear-gradient(to bottom,rgb(213, 68, 68),rgb(255, 108, 108));
+    }
+
+    .cards-grid{
+        /* height: 60vh; */
+        background: linear-gradient(to right, rgb(143, 193, 143),rgb(24, 182, 72),rgb(20, 209, 101),rgb(6, 160, 83));
+        display: flex;
+        padding: 100px;
+        gap: 50px; 
+        row-gap: 70px;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-items: center;
+        
+    }
+    .card{
+       width: 17rem; 
+       height: 20rem;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       flex-direction: column;
+       padding: 10px;
+       position: relative;
+       row-gap: 20px;
+       
+    }
+
+    .circle{
+      height: 100px;
+      width: 100px;
+      border-radius: 50%;
+      position: absolute;
+      top: -35px;
+    }
+    .square{
+        height: 150px;
+        width: 100px;
+        margin-top: 50px;
+
+        
+    }
+</style>
+<body>
+    <div class="parent" >
+        <h1 class="net">Netflix</h1>
+    </div>
+
+    <div class="cards-grid">
+        <div class="card" style="background-color: aqua;">
+            <div class="circle" style="background-color: aliceblue;"></div>
+            
+            <div class="square" style="background-color: aliceblue; "></div>
+            <button style="padding: 5px; width: 100px; ">click me</button>
+        </div>
+        <div class="card" style="background-color: rgb(49, 15, 163);">
+            <div class="circle" style="background-color: aliceblue;"></div>
+            <div class="square" style="background-color: aliceblue;"></div>
+            <button style="padding: 5px; width: 100px;">click me</button>
+
+        </div>
+        <div class="card" style="background-color: rgb(167, 27, 27);">
+            <div class="circle" style="background-color: aliceblue;"></div>
+            <div class="square" style="background-color: aliceblue;"></div>
+            <button style="padding: 5px; width: 100px;">click me</button>
+
+        </div>
+        <div class="card" style="background-color: rgb(7, 160, 45);">
+            <div class="circle" style="background-color: aliceblue;"></div>
+            <div class="square" style="background-color: aliceblue;"></div>
+            <button style="padding: 5px; width: 100px;">click me</button>
+
+        </div>
+        <div class="card" style="background-color: aqua;">
+            <div class="circle" style="background-color: aliceblue;"></div>
+            <div class="square" style="background-color: aliceblue;"></div>
+            <button style="padding: 5px; width: 100px;">click me</button>
+
+        </div>
+        <!-- <div class="card" style="background-color: rgb(49, 15, 163);"></div>
+        <div class="card" style="background-color: rgb(167, 27, 27);"></div>
+        <div class="card" style="background-color: rgb(7, 160, 45);"></div>
+        <div class="card" style="background-color: aqua;"></div>
+        <div class="card" style="background-color: rgb(49, 15, 163);"></div>
+        <div class="card" style="background-color: rgb(167, 27, 27);"></div>
+        <div class="card" style="background-color: rgb(7, 160, 45);"></div> -->
+        
+    </div>
+</body>
+</html>
