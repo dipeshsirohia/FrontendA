@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>badge</title>
+</head>
+<style>
+    *{
+        margin: 0;
+    }
+    .container{
+        height: 100vh;
+        background-color: black;
+    }
+
+    .card{
+        height: 200px;
+        width: 400px;
+        border: 2px solid white;
+        position: relative;
+        top:50px;
+        left: 50px;
+    }
+
+    .badge{
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: yellow;
+        position: absolute;
+        right: -10px;
+        top: -17px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="badge">
+                20%
+            </div>
+        </div>
+    </div>
+</body>
+</html>
